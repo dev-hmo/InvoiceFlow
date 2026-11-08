@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Oryx stylised fan/shell logo -->
+  <g>
+    <!-- Base circle hub -->
+    <circle cx="60" cy="85" r="6" fill="#1a3a8f"/>
+    
+    <!-- Fan blades emanating from bottom center -->
+    <!-- Blade 1 (leftmost) -->
+    <path d="M 60 85 C 25 75 15 50 20 20 Q 30 10 38 25 C 35 50 42 70 60 85 Z" fill="#1a3a8f" opacity="0.9"/>
+    <!-- Blade 2 -->
+    <path d="M 60 85 C 32 68 28 42 35 15 Q 42 5 48 20 C 45 48 50 68 60 85 Z" fill="#1a3a8f" opacity="0.9"/>
+    <!-- Blade 3 -->
+    <path d="M 60 85 C 42 65 42 38 48 12 Q 54 2 60 15 C 56 42 56 65 60 85 Z" fill="#1a3a8f" opacity="0.9"/>
+    <!-- Blade 4 (centre) -->
+    <path d="M 60 85 C 58 62 60 35 60 10 Q 64 2 68 10 C 68 35 68 62 60 85 Z" fill="#1a3a8f" opacity="0.9"/>
+    <!-- Blade 5 -->
+    <path d="M 60 85 C 72 65 76 42 72 12 Q 78 2 84 15 C 82 38 78 65 60 85 Z" fill="#1a3a8f" opacity="0.9"/>
+    <!-- Blade 6 -->
+    <path d="M 60 85 C 82 68 87 48 85 20 Q 90 5 96 15 C 90 42 86 68 60 85 Z" fill="#1a3a8f" opacity="0.9"/>
+    <!-- Blade 7 (rightmost) -->
+    <path d="M 60 85 C 90 70 100 50 100 20 Q 108 10 112 25 C 102 50 90 72 60 85 Z" fill="#1a3a8f" opacity="0.9"/>
+    
+    <!-- Curved base line -->
+    <path d="M 20 90 Q 60 100 100 90" stroke="#1a3a8f" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>
+
