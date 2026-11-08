@@ -15,3 +15,4 @@ Print-RGB 200 360 "Footer Bottom Bar"
 Print-RGB 100 95 "Student Name Label"
 
 $img.Dispose()
+

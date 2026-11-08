@@ -12,10 +12,11 @@ import {
 } from 'lucide-react';
 
 const navItems = [
+  { href: '/', label: 'Touch POS (ဘောင်ချာ)', icon: Receipt },
   { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/students', label: 'Students', icon: Users },
   { href: '/invoices', label: 'Invoices', icon: FileText },
-  { href: '/receipts', label: 'Receipts', icon: Receipt },
+  { href: '/receipts', label: 'Receipt History', icon: Receipt },
   { href: '/courses', label: 'Courses', icon: BookOpen },
   { href: '/settings', label: 'Settings', icon: Settings },
 ];

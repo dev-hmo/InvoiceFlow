@@ -1,6 +1,5 @@
-import { redirect } from 'next/navigation';
+import TouchPosScreen from '@/components/TouchPosScreen';
 
-export default function Home() {
-  redirect('/dashboard');
+export default function HomePage() {
+  return <TouchPosScreen />;
 }
-

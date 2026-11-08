@@ -33,7 +33,7 @@ export default function ReceiptViewPage({ params }: Props) {
         </div>
         <div className="flex gap-2">
           <Link
-            href={`/receipts/${params.id}/print`}
+            href={`/print/${params.id}`}
             target="_blank"
             className="btn-secondary flex items-center gap-2"
           >

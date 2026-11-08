@@ -72,8 +72,8 @@ export default function PayInvoicePage({ params }: { params: { id: string } }) {
 
     if (res.ok) {
       const data = await res.json();
-      // Navigate to the generated receipt
-      router.push(`/receipts/${data.receipt.id}`);
+      // Navigate to the print-ready receipt
+      router.push(`/print/${data.receipt.id}`);
     } else {
       const err = await res.json();
       alert('Error: ' + err.error);

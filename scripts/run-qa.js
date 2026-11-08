@@ -118,3 +118,4 @@ if (subtotal !== 800000 || total !== 750000) {
 console.log('✓ PASS Test 3: Subtotal, Advance, and Total math verified');
 
 console.log('=== ALL AUTOMATED QA TESTS PASSED SUCCESSFULLY ===');
+

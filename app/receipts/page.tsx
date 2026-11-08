@@ -84,7 +84,7 @@ export default function ReceiptsPage() {
                       <Link href={`/receipts/${r.id}`} className="text-blue-600 hover:text-blue-800 flex items-center gap-1 text-xs">
                         <Eye size={13} /> View
                       </Link>
-                      <Link href={`/receipts/${r.id}/print`} target="_blank" className="text-purple-600 hover:text-purple-800 flex items-center gap-1 text-xs">
+                      <Link href={`/print/${r.id}`} target="_blank" className="text-purple-600 hover:text-purple-800 flex items-center gap-1 text-xs">
                         <Printer size={13} /> Print
                       </Link>
                     </div>
