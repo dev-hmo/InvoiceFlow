@@ -552,7 +552,9 @@ export default function TouchPosScreen() {
                       <p className="font-bold text-slate-800">{r.receipt_number}</p>
                       <p className="text-[10px] text-slate-500">{r.student_name}</p>
                     </div>
-                    <span className="font-extrabold text-blue-700">{r.amount.toLocaleString()}</span>
+                    <span className="font-extrabold text-blue-700">
+                      {(r.amount ?? 0).toLocaleString()} MMK
+                    </span>
                   </div>
                 ))}
               </div>
@@ -588,3 +590,4 @@ export default function TouchPosScreen() {
     </div>
   );
 }
+

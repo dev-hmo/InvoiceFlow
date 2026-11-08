@@ -197,7 +197,7 @@ export function getPaymentItems(paymentId: number): PaymentItem[] {
 
 // ─── Receipts ────────────────────────────────────────────────────────────────
 
-export function getAllReceipts(): (Receipt & { student_name: string; payment_method: string })[] {
+export function getAllReceipts(): (Receipt & { student_name: string; payment_method: string; amount: number })[] {
   const db = readDb();
   return db.receipts
     .map((r) => {
@@ -208,6 +208,7 @@ export function getAllReceipts(): (Receipt & { student_name: string; payment_met
         ...r,
         student_name: student ? student.name : 'Unknown',
         payment_method: payment ? payment.payment_method : 'cash',
+        amount: payment ? payment.amount : 0,
       };
     })
     .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());
