@@ -46,9 +46,9 @@ export default function OryxReceipt({ data }: OryxReceiptProps) {
     <div
       className="receipt-wrapper receipt-page relative bg-white select-none text-black"
       style={{
-        width: '297mm',
-        height: '142mm', // Precise 864:382 proportion matching the physical voucher slip
-        maxHeight: '210mm',
+        width: '8in',
+        height: '3.5in', // Exact 8 x 3.5 inches
+        maxHeight: '3.5in',
         margin: '0 auto',
         padding: '0',
         boxSizing: 'border-box',

@@ -18,16 +18,19 @@
   color: #000;
 }
 
-/* Print styles */
+/* Print styles - 8 inches x 3.5 inches exact custom slip dimensions */
 @media print {
   @page {
-    size: A4 landscape;
+    size: 8in 3.5in;
     margin: 0;
   }
 
   html, body {
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 8in !important;
+    height: 3.5in !important;
+    background: #fff !important;
   }
 
   .no-print {
@@ -39,12 +42,15 @@
   }
 
   .receipt-page {
-    width: 297mm;
-    min-height: 210mm;
-    margin: 0;
-    padding: 0;
-    box-shadow: none;
+    width: 8in !important;
+    height: 3.5in !important;
+    min-height: 3.5in !important;
+    max-height: 3.5in !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
     page-break-after: avoid;
+    page-break-inside: avoid;
   }
 
   /* Force color printing */

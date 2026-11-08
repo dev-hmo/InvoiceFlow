@@ -43,24 +43,17 @@ export default function ReceiptViewPage({ params }: Props) {
         </div>
       </div>
 
-      {/* Receipt preview — scaled to fit screen */}
+      {/* Receipt preview */}
       <div
         style={{
           overflowX: 'auto',
           display: 'flex',
-          justifyContent: 'flex-start',
+          justifyContent: 'center',
           paddingBottom: '8px',
         }}
-        className="no-print"
+        className="no-print bg-slate-100 p-6 rounded-2xl border"
       >
-        <div
-          style={{
-            transform: 'scale(0.72)',
-            transformOrigin: 'top left',
-            width: '297mm',
-            flexShrink: 0,
-          }}
-        >
+        <div className="shadow-lg">
           <OryxReceipt data={data} />
         </div>
       </div>
